@@ -27,7 +27,7 @@ apis:
       extends:
         - recommended
 
-  main@v2: 
+  main@v3: 
     root: resources/pets.yaml
     features.openapi:
       disableSidebar: true
