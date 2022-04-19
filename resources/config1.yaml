@@ -1,0 +1,31 @@
+apis:
+  second:
+    root: ./petstore-with-errors.yaml
+    lint:
+      rules:
+        operation-2xx-response: warn
+
+lint:
+
+  extends:
+    - ./nestedConfig.yaml
+  rules:
+    operation-2xx-response: warn
+    no-invalid-media-type-examples: warn
+    operation-description: warn
+    path-http-verbs-order: warn
+    # boolean-parameter-prefixes: warn
+  preprocessors:
+    # local/duplicate-description: on
+  decorators:
+    # local/inject-x-stats: on
+features.openapi:
+  showConsole: true
+  layout:
+    scope: section
+  routingStrategy: browser
+  theme:
+    rightPanel:
+      backgroundColor: '#263238'
+    links:
+      color: '#6CC496'

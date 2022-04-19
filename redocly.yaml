@@ -1,0 +1,50 @@
+# apiDefinitions:
+#   alias: resources/petstore-with-errors.yaml
+
+apis: 
+  andrew@v1:
+    root: resources/pets.yaml
+    lint: 
+      extends: []
+      rules: 
+        operation-summary: warn
+    features.openapi: 
+      disableSidebar: true
+    
+  andrew: 
+    root: resources/petstore-with-errors.yaml
+    lint: 
+      # extends: []
+        # - recommended
+      rules: 
+        no-empty-servers: error
+
+  rebilly@test:
+    root: resources/rebilly.yaml
+    lint:
+      rules:
+        no-unused-components: error
+      extends:
+        - recommended
+
+  main@v1: 
+    root: resources/pets.yaml
+    features.openapi:
+      disableSidebar: true
+      hideLogo: true
+    lint:
+      rules:
+        operation-summary: warn
+
+
+
+organization: redocly-config
+
+lint: 
+  # extends: []
+  rules: 
+    operation-summary: error
+
+referenceDocs: 
+  licenseKey: eyJ0IjpmYWxzZSwiaSI6MTYwODc0MTUxOSwiZSI6MTc0MzgxMTIwMCwiaCI6WyJyZWRvYy5seSIsInJlZG9jbHkuY29tIiwicmVkb2MubHkiLCJyZWRvYy5vbmxpbmUiLCJyZWRvY2x5LWRldi53aW4iLCJyZWRvY2x5Lmhvc3QiXSwicyI6InBvcnRhbCJ9.j/JLCXglSSa9hKA+okES3CyN7LiQA1n6UREANgPoLscH6wniq8D8s5JRRS0ItEmuVEuHrLzletmXLSXJSB48KQ==
+  hideLogo: true
