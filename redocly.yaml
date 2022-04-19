@@ -27,11 +27,10 @@ apis:
       extends:
         - recommended
 
-  main@v1: 
+  main@v2: 
     root: resources/pets.yaml
     features.openapi:
       disableSidebar: true
-      hideLogo: true
     lint:
       rules:
         operation-summary: warn
