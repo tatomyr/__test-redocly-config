@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@redocly/openapi-core": "1.0.0-pitch.1"
+    "@redocly/openapi-core": "1.0.0-beta.93"
   }
 }
