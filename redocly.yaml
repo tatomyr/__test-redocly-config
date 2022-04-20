@@ -43,6 +43,7 @@ lint:
   # extends: []
   rules: 
     operation-summary: error
+    operation-4xx-response: error
 
 referenceDocs: 
   hideLogo: true
