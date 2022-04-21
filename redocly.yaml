@@ -44,7 +44,7 @@ apis:
       - resources/config2.yaml
       rules:
         operation-summary: warn
-        operation-2xx-response: off
+#         operation-2xx-response: off
 
 
 
@@ -54,7 +54,7 @@ lint:
   # extends: []
   rules: 
     operation-summary: error
-    operation-4xx-response: warn
+#     operation-4xx-response: warn
 
 referenceDocs: 
   hideLogo: true
