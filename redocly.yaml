@@ -2,7 +2,7 @@
 #   alias: resources/petstore-with-errors.yaml
 
 apis: 
-  andrew@v1:
+  x-andrew@v1:
     root: resources/pets.yaml
     lint: 
       extends: []
@@ -27,13 +27,14 @@ apis:
       extends:
         - recommended
 
-  main@v3: 
+  x-andrew@next: 
     root: resources/pets.yaml
     features.openapi:
       disableSidebar: true
     lint:
       rules:
         operation-summary: warn
+        operation-2xx-response: error
 
 
 
