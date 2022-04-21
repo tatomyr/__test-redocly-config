@@ -10,7 +10,7 @@ lint:
   extends:
     - recommended
   rules:
-    # operation-2xx-response: '????'
+    operation-2xx-response: error
     # no-invalid-media-type-examples: '????'
     operation-description: off
     # path-http-verbs-order: '????'
