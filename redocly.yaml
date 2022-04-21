@@ -40,8 +40,8 @@ apis:
     root: resources/pets.yaml
     lint:
       extends:
-      - config1.yaml
-      - config2.yaml
+      - resources/config1.yaml
+      - resources/config2.yaml
       rules:
         operation-summary: warn
         operation-2xx-response: off
