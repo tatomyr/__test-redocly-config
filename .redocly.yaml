@@ -1,5 +1,5 @@
 apis:
-  demo@local:
+  github@local:
     root: resources/pets.yaml
     lint:
       extends:
@@ -7,13 +7,13 @@ apis:
       rules:
         operation-2xx-response: off
 
-  demo@url:
+  github@url:
     root: resources/pets.yaml
     lint:
       extends:
         -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
 
-  demo@plugin:
+  github@plugin:
     root: resources/pets.yaml
     lint:
       extends:
