@@ -42,7 +42,7 @@ apis:
       extends:
       - resources/config1.yaml
       - resources/config2.yaml
-      - recommended
+
       rules:
         operation-summary: warn
 #         operation-2xx-response: off
