@@ -1,0 +1,6 @@
+
+lint:
+  plugins: 
+    - ./local-plugin.js
+  extends: 
+    - local/all

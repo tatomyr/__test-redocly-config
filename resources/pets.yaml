@@ -740,7 +740,7 @@ paths:
         - user
       summary: Get user by user name
       description: ''
-      operationId: getUserByName
+      operationId: test
       parameters:
         - name: username
           in: path

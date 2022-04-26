@@ -1,7 +1,7 @@
-export const id = 'local';
+ const id = 'local';
 
 /** @type {import('../src/config/config').CustomRulesConfig} */
-export const rules = {
+ const rules = {
   oas3: {
     'operation-id-not-test': () => {
       return {
@@ -21,7 +21,7 @@ export const rules = {
 rules.oas2 = rules.oas3;
 
 /** @type {import('../src/config/config').PreprocessorsConfig} */
-export const preprocessors = {
+ const preprocessors = {
   oas3: {
     'duplicate-description': () => {
       return {
@@ -36,7 +36,7 @@ export const preprocessors = {
 };
 
 /** @type {import('../src/config/config').DecoratorConfig} */
-export const decorators = {
+ const decorators = {
   oas3: {
     'inject-x-stats': () => {
       return {
@@ -48,11 +48,20 @@ export const decorators = {
   },
 };
 
-export const configs = {
+ const configs = {
   all: {
     rules: {
       'local/operation-id-not-test': 'error',
       'boolean-parameter-prefixes': 'error',
+      'operation-2xx-response': 'off'
     },
   },
 };
+
+module.exports = {
+   id,
+   rules,
+   preprocessors,
+   decorators,
+   configs,
+}

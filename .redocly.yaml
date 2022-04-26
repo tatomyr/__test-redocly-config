@@ -1,0 +1,25 @@
+apis:
+  demo@local:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        -  resources/nested-config.yaml
+      rules:
+        operation-2xx-response: off
+
+  demo@url:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
+
+  demo@plugin:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        - recommended
+        - resources/config-with-plugin.yaml
+        
+lint:
+  rules: 
+    operation-summary: error
