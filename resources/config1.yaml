@@ -10,7 +10,7 @@ lint:
   extends:
     - ./nestedConfig.yaml
   rules:
-    operation-4xx-response: off
+    operation-4xx-response: error
     no-invalid-media-type-examples: warn
     operation-description: warn
     path-http-verbs-order: warn
