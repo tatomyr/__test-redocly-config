@@ -44,7 +44,7 @@ apis:
       - resources/config2.yaml
       - recommended
       rules:
-        operation-summary: error
+        operation-summary: warn
 #         operation-2xx-response: off
 
 
