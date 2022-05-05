@@ -29,4 +29,4 @@ apis:
         
 lint:
   rules: 
-    operation-summary: error
+    operation-summary: warn
