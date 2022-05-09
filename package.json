@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@redocly/openapi-core": "1.0.0-beta.96",
-    "@redocly/cli": "1.0.0-beta.96"
+    "@redocly/openapi-core": "1.0.0-akx.1",
+    "@redocly/cli": "1.0.0-akx.1"
   }
 }
