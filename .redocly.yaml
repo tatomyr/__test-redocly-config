@@ -1,4 +1,4 @@
-apis:
+# apis:
 #   github@local:
 #     root: resources/pets.yaml
 #     lint:
@@ -20,13 +20,22 @@ apis:
 #         - recommended
 #         - resources/config-with-plugin.yaml
         
-  github@old:
-    root: resources/pets.yaml
+#   github@old:
+#     root: resources/pets.yaml
 #     lint: 
 #       extends: []
 #       rules: 
 #         operation-2xx-response: error
         
+# lint:
+#   rules: 
+#     operation-summary: warn
+
+apis:
+  github@old:
+    root: resources/pets.yaml
+        
 lint:
   rules: 
     operation-summary: warn
+  extends: []
