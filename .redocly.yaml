@@ -38,4 +38,4 @@ apis:
 lint:
   rules: 
     operation-summary: warn
-  extends: []
+#   extends: []
