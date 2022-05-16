@@ -25,7 +25,8 @@ apis:
     lint: 
       extends: []
       rules: 
-        operation-2xx-response: error
+        operation-2xx-response: warn
+        operation-400-response: error
         
 lint:
   rules: 
