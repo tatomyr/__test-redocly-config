@@ -21,7 +21,7 @@ apis:
         - resources/config-with-plugin.yaml
         
   github@old:
-    root: resources/pets.yaml
+    root: resources/31.yaml
     lint: 
       extends: []
       rules: 
