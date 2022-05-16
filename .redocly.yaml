@@ -1,41 +1,33 @@
-# apis:
-#   github@local:
-#     root: resources/pets.yaml
-#     lint:
-#       extends:
-#         -  resources/nested-config.yaml
-#       rules:
-#         operation-2xx-response: off
-
-#   github@url:
-#     root: resources/pets.yaml
-#     lint:
-#       extends:
-#         -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
-
-#   github@plugin:
-#     root: resources/pets.yaml
-#     lint:
-#       extends:
-#         - recommended
-#         - resources/config-with-plugin.yaml
-        
-#   github@old:
-#     root: resources/pets.yaml
-#     lint: 
-#       extends: []
-#       rules: 
-#         operation-2xx-response: error
-        
-# lint:
-#   rules: 
-#     operation-summary: warn
-
 apis:
+  github@local:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        -  resources/nested-config.yaml
+      rules:
+        operation-2xx-response: off
+
+  github@url:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
+
+  github@plugin:
+    root: resources/pets.yaml
+    lint:
+      extends:
+        - recommended
+        - resources/config-with-plugin.yaml
+        
   github@old:
     root: resources/pets.yaml
+    lint: 
+      extends: []
+      rules: 
+        operation-2xx-response: error
         
 lint:
   rules: 
     operation-summary: warn
-  extends: []
+
