@@ -27,7 +27,7 @@ apis:
       rules: 
         operation-2xx-response: warn
         operation-400-response: error
-        scalar-property-missing-example: warn
+        scalar-property-missing-example: error
         
 lint:
   rules: 
