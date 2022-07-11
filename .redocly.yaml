@@ -32,4 +32,5 @@ apis:
 lint:
   rules: 
     operation-summary: warn
+    asdfadf: sdfadsf
 
