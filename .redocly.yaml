@@ -29,6 +29,13 @@ apis:
         operation-400-response: error
         scalar-property-missing-example: error
         
+  github@valid:
+    root: resources/31.yaml
+    lint: 
+      extends: []
+      rules: 
+        operation-2xx-response: warn
+        
 lint:
   rules: 
     operation-summary: warn
