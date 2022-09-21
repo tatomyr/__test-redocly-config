@@ -11,7 +11,7 @@ apis:
     root: resources/pets.yaml
     lint:
       extends:
-        -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
+      -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
 
   github@plugin:
     root: resources/pets.yaml
