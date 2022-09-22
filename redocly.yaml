@@ -13,31 +13,31 @@ apis:
 #       extends:
 #       -  https://raw.githubusercontent.com/Redocly/openapi-cli/master/packages/core/src/config/__tests__/fixtures/resolve-remote-configs/remote-config.yaml
 
-  github@plugin:
-    root: resources/pets.yaml
-    lint:
-      extends:
-        - recommended
-        - resources/config-with-plugin.yaml
+#   github@plugin:
+#     root: resources/pets.yaml
+#     lint:
+#       extends:
+#         - recommended
+#         - resources/config-with-plugin.yaml
         
-  github@old:
-    root: resources/31.yaml
-    lint: 
-      extends: []
-      rules: 
-        operation-2xx-response: warn
-        operation-400-response: error
-        scalar-property-missing-example: error
+#   github@old:
+#     root: resources/31.yaml
+#     lint: 
+#       extends: []
+#       rules: 
+#         operation-2xx-response: warn
+#         operation-400-response: error
+#         scalar-property-missing-example: error
         
-  github@valid:
-    root: resources/31.yaml
-    lint: 
-      extends: []
-      rules: 
-        operation-2xx-response: warn
+#   github@valid:
+#     root: resources/31.yaml
+#     lint: 
+#       extends: []
+#       rules: 
+#         operation-2xx-response: warn
         
-lint:
-  rules: 
-    operation-summary: warn
-    asdfadf: sdfadsf
+# lint:
+#   rules: 
+#     operation-summary: warn
+#     asdfadf: sdfadsf
 
