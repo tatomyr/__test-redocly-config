@@ -2,10 +2,10 @@ apis:
   github@local:
     root: resources/pets.yaml
     styleguide:
-      extends:
-        -  resources/nested-config.yaml
+      extends: []
+        # -  resources/nested-config.yaml
       rules:
-        operation-2xx-response: off
+        operation-2xx-response: warn
 
 #   github@url:
 #     root: resources/pets.yaml
