@@ -37,6 +37,7 @@ apis:
         operation-2xx-response: warn
         
 lint:
+  extends: []
   rules: 
     operation-summary: warn
     asdfadf: sdfadsf
